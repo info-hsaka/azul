@@ -5,41 +5,77 @@ import { TurnOrder } from "boardgame.io/core"
 export const Game = {
   setup: ({ random, ctx }) => {
     const tiles = {
-      schwarz:  "schwarz",
+      schwarz: "schwarz",
       weiß: "weiß",
       gelb: "gelb",
       blau: "blau",
-      rot: "rot"
+      rot: "rot",
     }
 
-    let sack = [
+    let sack = []
+    let i = 1
+    while (i <= 20) {
+      sack.push(tiles.rot)
+      sack.push(tiles.weiß)
+      sack.push(tiles.schwarz)
+      sack.push(tiles.blau)
+      sack.push(tiles.gelb)
+      i = i + 1
+    }
 
+    sack = random.Shuffle(sack)
+
+    let legeFeld = [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
     ]
-     let i = 1
-      while (i<= 20){
-        sack.push(tiles.rot)
-        sack.push(tiles.weiß)
-        sack.push(tiles.schwarz)
-        sack.push(tiles.blau)
-        sack.push(tiles.gelb)
-      i= i+1 }
-      let legeFeld = [
-        null, null, null, null, null,
-        null, null, null, null, null,
-        null, null, null, null, null,
-        null, null, null, null, null,
-        null, null, null, null, null,
-      ]
-      return {
-      sack: sack,
-      legeFeld: legeFeld
+
+    let pyramide = [
+      [null],
+      [null, null],
+      [null, null, null],
+      [null, null, null, null],
+      [null, null, null, null, null],
+    ]
+
+    let manufaktur = [[], [], [], [], [], [], [], [], []]
+    let m = 0
+    while (manufaktur[m].length < 4 && m < 9) {
+      manufaktur[m].push(sack.shift)
+      if ((manufaktur[m].length = 4)) {
+        m = m + 1
+      }
     }
 
-
-
-
-
-
+    return {
+      sack: sack,
+      legeFeld: legeFeld,
+      pyramide: pyramide,
+      manufaktur: manufaktur,
+    }
   },
 
   moves: {
