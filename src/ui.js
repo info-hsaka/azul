@@ -73,15 +73,18 @@ export function draw(
     ctx.stroke()
     f = f + 50
   }
+  let p = 725
+  let q = 150
+  while (q <= 550) {}
 
-  ctx.beginPath()
+  /*ctx.beginPath()
   ctx.arc(725, 150, 75, 0, 2 * Math.PI)
   ctx.strokeStyle = "black"
   ctx.stroke()
   ctx.beginPath()
   ctx.arc(925, 150, 75, 0, 2 * Math.PI)
   ctx.strokeStyle = "black"
-  ctx.stroke()
+  ctx.stroke()*/
 
   /* ctx.strokeRect(300, 200, 250, 250)
   let a2 = 350
