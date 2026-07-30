@@ -75,7 +75,14 @@ export function draw(
   }
 
   ctx.beginPath()
-  ctx.arc(725, 200, 75, 0, 2 * Math.PI)
+  ctx.arc(725, 150, 75, 0, 2 * Math.PI)
+  ctx.strokeStyle = "black"
+  ctx.stroke()
+  ctx.beginPath()
+  ctx.arc(850, 150, 75, 0, 2 * Math.PI)
+  ctx.strokeStyle = "black"
+  ctx.stroke()
+
   /* ctx.strokeRect(300, 200, 250, 250)
   let a2 = 350
   while (a2 < 550) {
