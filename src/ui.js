@@ -54,8 +54,9 @@ export function draw(
   ctx.lineTo(250, 150)
   ctx.closePath()
   ctx.fill()
-
-  ctx.strokeRect(300, 200, 250, 250)
+  ctx.beginPath()
+  ctx.arc()
+  /* ctx.strokeRect(300, 200, 250, 250)
   let a2 = 350
   while (a2 < 550) {
     ctx.beginPath()
@@ -97,5 +98,5 @@ export function draw(
   ctx.lineTo(0, 200)
   ctx.lineTo(250, 150)
   ctx.closePath()
-  ctx.fill()
+  ctx.fill()*/
 }
