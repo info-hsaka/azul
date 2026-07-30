@@ -56,11 +56,21 @@ export function draw(
 
   let e = 0
   while (e < 1500) {
+    ctx.strokeStyle = "red"
     ctx.beginPath()
     ctx.moveTo(e, 0)
     ctx.lineTo(e, 1500)
     ctx.stroke()
     e = e + 50
+  }
+  let f = 0
+  while (f < 3000) {
+    ctx.strokeStyle = "red"
+    ctx.beginPath()
+    ctx.moveTo(0, f)
+    ctx.lineTo(3000, f)
+    ctx.stroke()
+    f = f + 50
   }
   /*ctx.fill()
   ctx.beginPath()
