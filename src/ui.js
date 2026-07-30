@@ -55,7 +55,7 @@ export function draw(
   ctx.closePath()
   ctx.fill()
 
-  let e = 0
+  /*let e = 0
   while (e < 1500) {
     ctx.strokeStyle = "red"
     ctx.beginPath()
@@ -72,7 +72,7 @@ export function draw(
     ctx.lineTo(3000, f)
     ctx.stroke()
     f = f + 50
-  }
+  }*/
   // while schleife für die Platten
   let p = 725
   let q = 150
@@ -88,6 +88,10 @@ export function draw(
       q = q + 200
     }
   }
+
+  ctx.beginPath()
+  ctx.arc(275, 775, 275, 0, Math.PI * 2)
+  ctx.stroke()
 
   /*ctx.beginPath()
   ctx.arc(725, 150, 75, 0, 2 * Math.PI)
