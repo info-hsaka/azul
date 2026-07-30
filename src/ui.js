@@ -57,7 +57,9 @@ export function draw(
 
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
-  let e = 0
+  function malFenster() /* diese funktion kann immer aufgerufen werden, wenn die while-schleife( die wir auch noch schreiben müssen )
+sagt, wo der neue mittelpunkt sein muss, deann wird das fenster platziert		*/
+	let e = 0
   while (e < 1500) {
     ctx.strokeStyle = "red"
     ctx.beginPath()
