@@ -79,7 +79,7 @@ export function draw(
   ctx.strokeStyle = "black"
   ctx.stroke()
   ctx.beginPath()
-  ctx.arc(850, 150, 75, 0, 2 * Math.PI)
+  ctx.arc(925, 150, 75, 0, 2 * Math.PI)
   ctx.strokeStyle = "black"
   ctx.stroke()
 
