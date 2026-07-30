@@ -53,6 +53,7 @@ export function draw(
   ctx.lineTo(0, 200)
   ctx.lineTo(250, 150)
   ctx.closePath()
+  ctx.fill()
 
   let e = 0
   while (e < 1500) {
@@ -72,9 +73,9 @@ export function draw(
     ctx.stroke()
     f = f + 50
   }
-  /*ctx.fill()
+
   ctx.beginPath()
-  ctx.arc()*/
+  ctx.arc(725, 200, 75, 0, 2 * Math.PI)
   /* ctx.strokeRect(300, 200, 250, 250)
   let a2 = 350
   while (a2 < 550) {
