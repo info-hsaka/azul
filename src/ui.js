@@ -73,9 +73,21 @@ export function draw(
     ctx.stroke()
     f = f + 50
   }
+  // while schleife für die Platten
   let p = 725
   let q = 150
-  while (q <= 550) {}
+  while (q <= 550) {
+    ctx.beginPath()
+    ctx.arc(p, q, 75, 0, 2 * Math.PI)
+    ctx.strokeStyle = "black"
+    ctx.stroke()
+    if (p < 1125) {
+      p = p + 200
+    } else if (q <= 550) {
+      p = 725
+      q = q + 200
+    }
+  }
 
   /*ctx.beginPath()
   ctx.arc(725, 150, 75, 0, 2 * Math.PI)
