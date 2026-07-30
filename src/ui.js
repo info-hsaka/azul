@@ -12,40 +12,84 @@ export function draw(
 
   // draw here
   ctx.strokeRect(300, 200, 250, 250)
-  let a = 350
-  while (a < 550) {
+  let a1 = 350
+  while (a1 < 550) {
     ctx.beginPath()
-    ctx.moveTo(a, 200)
-    ctx.lineTo(a, 450)
+    ctx.moveTo(a1, 200)
+    ctx.lineTo(a1, 450)
     ctx.stroke()
-    a = a + 50
+    a1 = a1 + 50
   }
-  let b = 250
-  while (b < 450) {
+  let b1 = 250
+  while (b1 < 450) {
     ctx.beginPath()
-    ctx.moveTo(300, b)
-    ctx.lineTo(550, b)
+    ctx.moveTo(300, b1)
+    ctx.lineTo(550, b1)
     ctx.stroke()
-    b = b + 50
+    b1 = b1 + 50
   }
 
   ctx.strokeRect(0, 200, 250, 250)
-  let c = 0
-  while (c < 550) {
+  let c1 = 0
+  while (c1 < 550) {
     ctx.beginPath()
-    ctx.moveTo(c, 200)
-    ctx.lineTo(c, 450)
+    ctx.moveTo(c1, 200)
+    ctx.lineTo(c1, 450)
     ctx.stroke()
-    c = c + 50
+    c1 = c1 + 50
   }
 
-  let d = 250
-  while (d < 450) {
+  let d1 = 250
+  while (d1 < 450) {
     ctx.beginPath()
-    ctx.moveTo(0, d)
-    ctx.lineTo(250, d)
+    ctx.moveTo(0, d1)
+    ctx.lineTo(250, d1)
     ctx.stroke()
-    d = d + 50
+    d1 = d1 + 50
+  }
+  ctx.fillStyle = "white"
+  ctx.beginPath()
+  ctx.moveTo(0, 400)
+  ctx.lineTo(0, 200)
+  ctx.lineTo(250, 150)
+  ctx.closePath()
+  ctx.fill()
+
+  ctx.strokeRect(300, 200, 250, 250)
+  let a2 = 350
+  while (a2 < 550) {
+    ctx.beginPath()
+    ctx.moveTo(a2, 200)
+    ctx.lineTo(a2, 450)
+    ctx.stroke()
+    a2 = a + 50
+  }
+  let b2 = 250
+  while (b2 < 450) {
+    ctx.beginPath()
+    ctx.moveTo(300, b2)
+    ctx.lineTo(550, b2)
+    ctx.stroke()
+    b2 = b2 + 50
+  }
+
+  ctx.strokeRect(0, 200, 250, 250)
+  let c2 = 0
+  while (c2 < 550) {
+    ctx.beginPath()
+    ctx.moveTo(c2, 200)
+    ctx.lineTo(c2, 450)
+    ctx.stroke()
+    c2 = c2 + 50
+  }
+
+  let d2 = 250
+  while (d2 < 450) {
+    ctx.beginPath()
+    ctx.moveTo(0, d2)
+    ctx.lineTo(250, d2)
+    ctx.stroke()
+    d2 = d2 + 50
   }
   ctx.fillStyle = "white"
   ctx.beginPath()
