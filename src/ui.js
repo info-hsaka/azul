@@ -55,6 +55,7 @@ export function draw(
   ctx.closePath()
   ctx.fill()
 
+  state.G.manufaktur
   /*let e = 0
   while (e < 1500) {
     ctx.strokeStyle = "red"
