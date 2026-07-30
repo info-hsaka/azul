@@ -54,9 +54,9 @@ export function draw(
   ctx.lineTo(250, 150)
   ctx.closePath()
   ctx.fill()
-  console.log(state.G.manufaktur[(0)[0]])
+  console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
-  /*let e = 0
+  let e = 0
   while (e < 1500) {
     ctx.strokeStyle = "red"
     ctx.beginPath()
@@ -73,7 +73,7 @@ export function draw(
     ctx.lineTo(3000, f)
     ctx.stroke()
     f = f + 50
-  }*/
+  }
   // while schleife für die Platten
   let p = 725
   let q = 150
