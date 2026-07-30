@@ -47,8 +47,7 @@ export function draw(
     ctx.stroke()
     d = d + 50
   }
-
-  ctx.fillStyle("white")
+  ctx.fillStyle = "white"
   ctx.beginPath()
   ctx.moveTo(0, 400)
   ctx.lineTo(0, 200)
