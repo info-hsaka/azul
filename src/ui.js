@@ -101,12 +101,14 @@ export function draw(
 
   function quadrateLegen(a, b) {
     ctx.strokeStyle = "black"
-    ctx.strokeRect(a - 50, b + 50, 50, 50)
-    ctx.strokeRect(a, b + 50, 50, 50)
-    ctx.strokeRect(a - 50, b, 50, 50)
-    ctx.strokeRect(a, b, 50, 50)
+    for (let farbeSortierer of manufaktur) {
+      ctx.fillStyle(farbeSortierer[0])
+      ctx.strokeRect(a - 50, b + 50, 50, 50)
+      ctx.strokeRect(a, b + 50, 50, 50)
+      ctx.strokeRect(a - 50, b, 50, 50)
+      ctx.strokeRect(a, b, 50, 50)
+    }
   }
-
   for (let punkt of mittelpunkte) {
     let s = 0
     let a = punkt[s]
