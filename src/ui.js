@@ -98,9 +98,9 @@ export function draw(
   ctx.beginPath()
   ctx.arc(275, 775, 275, 0, Math.PI * 2)
   ctx.stroke()
-
+  let platz = 0
   function quadrateLegen(a, b) {
-    for (let farbeSortierer of state.G.manufaktur) {
+    for (let farbeSortierer of state.G.manufaktur[platz]) {
       ctx.fillStyle = farbeSortierer[0]
       ctx.fillRect(a - 50, b + 50, 50, 50)
       ctx.fillStyle = farbeSortierer[1]
@@ -109,6 +109,7 @@ export function draw(
       ctx.fillRect(a - 50, b, 50, 50)
       ctx.fillStyle = farbeSortierer[3]
       ctx.fillRect(a, b, 50, 50)
+      platz = platz + 1
     }
   }
   for (let punkt of mittelpunkte) {
