@@ -107,7 +107,7 @@ export function draw(
     let farbeSortierer = state.G.manufaktur[platz]
     ctx.fillStyle = farbeSortierer[0]
     ctx.fillRect(a - 50, b + 50, 50, 50)
-    onClick(a - 50, b + 50, 50, 50, () => console.log("Ich wurde angeklickt"))
+    onClick(a - 50, b + 50, 50, 50, moves.takeTile(platz, 0))
     ctx.fillStyle = farbeSortierer[1]
     ctx.fillRect(a, b + 50, 50, 50)
     ctx.fillStyle = farbeSortierer[2]
