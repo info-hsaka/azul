@@ -109,12 +109,12 @@ export function draw(
       ctx.fillRect(a - 50, b, 50, 50)
       ctx.fillStyle = farbeSortierer[3]
       ctx.fillRect(a, b, 50, 50)
-      platz = platz + 1
     }
   }
   for (let punkt of mittelpunkte) {
     let a = punkt[0]
     let b = punkt[1]
+    platz = platz + 1
     quadrateLegen(a, b)
   }
 
