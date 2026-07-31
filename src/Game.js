@@ -86,8 +86,8 @@ export const Game = {
     /** @type {Move} */
 
     takeTile: function takeTile(move, manufakturindex, tileindex) {
-      //move.G.inventory.push(move.G.manufaktur[manufakturindex][tileindex])
-      //move.G.manufaktur[manufakturindex].slice(tileindex, 1)
+      move.G.inventory.push(move.G.manufaktur[manufakturindex][tileindex])
+      move.G.manufaktur[manufakturindex].slice(tileindex, 1)
     },
   },
 
