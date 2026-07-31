@@ -112,9 +112,8 @@ export function draw(
     }
   }
   for (let punkt of mittelpunkte) {
-    let s = 0
-    let a = punkt[s]
-    let b = punkt[s + 1]
+    let a = punkt[0]
+    let b = punkt[1]
     quadrateLegen(a, b)
   }
 
