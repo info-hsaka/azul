@@ -69,12 +69,16 @@ export const Game = {
       }
     }
     let mitte = []
+
+    const inventory = []
+
     return {
       sack: sack,
       legeFeld: legeFeld,
       pyramide: pyramide,
       manufaktur: manufaktur,
       mitte: mitte,
+      inventory: inventory,
     }
   },
 
