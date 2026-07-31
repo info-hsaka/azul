@@ -106,13 +106,13 @@ export function draw(
   function quadrateLegen(a, b) {
     let farbeSortierer = state.G.manufaktur[platz]
     ctx.fillStyle = farbeSortierer[0]
-    ctx.fillRect(a - 50, b + 50, 50, 50)
+    ctx.fillRect(a - 50, b, 50, 50)
     console.log(platz)
-    onClick(a - 50, b + 50, 50, 50, () => moves.takeTile(platz, 0))
+    onClick(a - 50, b, 50, 50, () => moves.takeTile(platz, 0))
     ctx.fillStyle = farbeSortierer[1]
     ctx.fillRect(a, b + 50, 50, 50)
     ctx.fillStyle = farbeSortierer[2]
-    ctx.fillRect(a - 50, b, 50, 50)
+    ctx.fillRect(a - 50, b + 50, 50, 50)
     ctx.fillStyle = farbeSortierer[3]
     ctx.fillRect(a, b, 50, 50)
   }
