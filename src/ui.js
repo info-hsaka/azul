@@ -100,13 +100,15 @@ export function draw(
   ctx.stroke()
 
   function quadrateLegen(a, b) {
-    ctx.strokeStyle = "black"
-    for (let farbeSortierer of manufaktur) {
-      ctx.fillStyle(farbeSortierer[0])
-      ctx.strokeRect(a - 50, b + 50, 50, 50)
-      ctx.strokeRect(a, b + 50, 50, 50)
-      ctx.strokeRect(a - 50, b, 50, 50)
-      ctx.strokeRect(a, b, 50, 50)
+    for (let farbeSortierer of state.G.manufaktur) {
+      ctx.fillStyle = farbeSortierer[0]
+      ctx.fillRect(a - 50, b + 50, 50, 50)
+      ctx.fillStyle = farbeSortierer[1]
+      ctx.fillRect(a, b + 50, 50, 50)
+      ctx.fillStyle = farbeSortierer[2]
+      ctx.fillRect(a - 50, b, 50, 50)
+      ctx.fillStyle = farbeSortierer[3]
+      ctx.fillRect(a, b, 50, 50)
     }
   }
   for (let punkt of mittelpunkte) {
