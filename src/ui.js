@@ -95,9 +95,11 @@ export function draw(
   }
 
   console.dir(mittelpunkte)
-  ctx.beginPath()
+
+  ctx.beginPath() // großer Kreis (Freier Markt)
   ctx.arc(275, 775, 275, 0, Math.PI * 2)
   ctx.stroke()
+
   let platz = 0
   function quadrateLegen(a, b) {
     let farbeSortierer = state.G.manufaktur[platz]
