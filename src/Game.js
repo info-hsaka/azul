@@ -89,7 +89,7 @@ export const Game = {
       console.log(JSON.stringify(move.G.manufaktur, null, 4))
       console.log(manufakturindex)
       move.G.inventory.push(move.G.manufaktur[manufakturindex][tileindex])
-      move.G.manufaktur[manufakturindex].slice(tileindex, 1)
+      move.G.manufaktur[manufakturindex].splice(tileindex, 1)
     },
   },
 
