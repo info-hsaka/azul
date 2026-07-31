@@ -62,13 +62,7 @@ export const Game = {
     ]
 
     let manufaktur = [[], [], [], [], [], [], [], [], []]
-    /*let m = 0
-    while (manufaktur[m].length < 4 && m < 9) {
-      manufaktur[m].push(sack.shift())
-      if ((manufaktur[m].length = 4)) {
-        m = m + 1
-      }
-    }*/
+
     for (let platte of manufaktur) {
       while (platte.length < 4) {
         platte.push(sack.shift())
