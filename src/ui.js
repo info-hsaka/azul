@@ -113,8 +113,8 @@ export function draw(
   for (let punkt of mittelpunkte) {
     let a = punkt[0]
     let b = punkt[1]
-    platz = platz + 1
     quadrateLegen(a, b)
+    platz = platz + 1
   }
 
   /*ctx.beginPath()
