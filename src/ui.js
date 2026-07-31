@@ -78,13 +78,15 @@ sagt, wo der neue mittelpunkt sein muss, deann wird das fenster platziert		*/
     f = f + 25
   }
   // while schleife für die Platten
+  let mittelpunkte = []
   let p = 725
-  let q = 150
+  let q = 150 //Das ist der erste Mittelpunkt
   while (q <= 550) {
     ctx.beginPath()
     ctx.arc(p, q, 75, 0, 2 * Math.PI)
     ctx.strokeStyle = "black"
-    ctx.stroke()
+    ctx.stroke() //Hier wird der Kreis gezeichnet
+    mittelpunkte.push(p, q)
     if (p < 1125) {
       p = p + 200
     } else if (q <= 550) {
@@ -92,7 +94,7 @@ sagt, wo der neue mittelpunkt sein muss, deann wird das fenster platziert		*/
       q = q + 200
     }
   }
-
+  return mittelpunkte
   ctx.beginPath()
   ctx.arc(275, 775, 275, 0, Math.PI * 2)
   ctx.stroke()
