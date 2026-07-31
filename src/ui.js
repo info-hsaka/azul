@@ -111,10 +111,13 @@ export function draw(
     onClick(a - 50, b, 50, 50, () => moves.takeTile(platz, 0))
     ctx.fillStyle = farbeSortierer[1]
     ctx.fillRect(a, b, 50, 50)
+    onClick(a, b, 50, 50, () => moves.takeTile(platz, 1))
     ctx.fillStyle = farbeSortierer[2]
     ctx.fillRect(a - 50, b + 50, 50, 50)
+    onClick(a - 50, b + 50, 50, 50, () => moves.takeTile(platz, 2))
     ctx.fillStyle = farbeSortierer[3]
     ctx.fillRect(a, b + 50, 50, 50)
+    onClick(a, b + 50, 50, 50, () => moves.takeTile(platz, 3))
   }
   for (let punkt of mittelpunkte) {
     let a = punkt[0]
