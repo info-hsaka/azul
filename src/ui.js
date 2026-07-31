@@ -107,6 +107,7 @@ export function draw(
     let farbeSortierer = state.G.manufaktur[platz]
     ctx.fillStyle = farbeSortierer[0]
     ctx.fillRect(a - 50, b + 50, 50, 50)
+    console.log(platz)
     onClick(a - 50, b + 50, 50, 50, () => moves.takeTile(platz, 0))
     ctx.fillStyle = farbeSortierer[1]
     ctx.fillRect(a, b + 50, 50, 50)
@@ -119,7 +120,9 @@ export function draw(
     let a = punkt[0]
     let b = punkt[1]
     quadrateLegen(a, b)
-    platz = platz + 1
+    if (platz < 8) {
+      platz = platz + 1
+    }
   }
 
   /*ctx.beginPath()
