@@ -84,9 +84,10 @@ export const Game = {
 
   moves: {
     /** @type {Move} */
-    playCard: ({ G, ctx, playerID, events, random }, cardIndex) => {},
-    drawCard(ctx) {},
-    //clickTile: function clickTile ( move, )
+
+    takeTile: function takeTile(move, manufakturindex, tileindex) {
+      manufaktur[manufakturindex][tileindex]
+    },
   },
 
   seed: "random-seed",
