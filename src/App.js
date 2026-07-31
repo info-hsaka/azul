@@ -29,6 +29,7 @@ class GameClient {
   update(state) {
     resetOnClicks()
     clearFrame()
+    console.log(state)
     draw(state, this.client.moves)
   }
 }
