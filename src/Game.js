@@ -86,7 +86,7 @@ export const Game = {
     /** @type {Move} */
     playCard: ({ G, ctx, playerID, events, random }, cardIndex) => {},
     drawCard(ctx) {},
-    clickTile: function clickTile ( move, )
+    //clickTile: function clickTile ( move, )
   },
 
   seed: "random-seed",
