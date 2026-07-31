@@ -86,7 +86,7 @@ sagt, wo der neue mittelpunkt sein muss, deann wird das fenster platziert		*/
     ctx.arc(p, q, 75, 0, 2 * Math.PI)
     ctx.strokeStyle = "black"
     ctx.stroke() //Hier wird der Kreis gezeichnet
-    mittelpunkte.push([p, q - 100])
+    mittelpunkte.push([p, q - 50])
     if (p < 1125) {
       p = p + 200
     } else if (q <= 550) {
@@ -102,7 +102,10 @@ sagt, wo der neue mittelpunkt sein muss, deann wird das fenster platziert		*/
 
   function quadrateLegen(a, b) {
     ctx.strokeStyle = "black"
-    ctx.strokeRect(a - 50, b + 50, 100, 100)
+    ctx.strokeRect(a - 50, b + 50, 50, 50)
+    ctx.strokeRect(a, b + 50, 50, 50)
+    ctx.strokeRect(a - 50, b, 50, 50)
+    ctx.strokeRect(a, b, 50, 50)
   }
 
   for (let punkt of mittelpunkte) {
