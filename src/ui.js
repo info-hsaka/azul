@@ -100,6 +100,15 @@ sagt, wo der neue mittelpunkt sein muss, deann wird das fenster platziert		*/
   ctx.arc(275, 775, 275, 0, Math.PI * 2)
   ctx.stroke()
 
+  function quadrateLegen(a, b) {
+    ctx.strokeRect(a - 50, b + 50, 100, 100)
+  }
+
+  for (let punkt of mittelpunkte) {
+    let s = 0
+    a = punkt[s]
+    b = punkt[s + 1]
+  }
   /*ctx.beginPath()
   ctx.arc(725, 150, 75, 0, 2 * Math.PI)
   ctx.strokeStyle = "black"
