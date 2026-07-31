@@ -104,41 +104,25 @@ export function draw(
 
   let platz = 0
   function quadrateLegen(a, b, platz) {
-    const coords = [
-      [a - 50, b],
-      [a, b],
-      [a - 50, b + 50],
-      [a, b + 50],
-      [a, b + 100],
-    ]
-
     let farbeSortierer = state.G.manufaktur[platz]
 
-    for (const i of [0, 1, 2, 3, 4]) {
-      if (farbeSortierer[i] == null) {
-        continue
-      }
-
-      ctx.fillStyle = farbeSortierer[i]
-      ctx.fillRect(coords[i][0], coords[i][1], 50, 50)
-      console.log(platz)
-      onClick(coords[i][0], coords[i][1], 50, 50, () =>
-        moves.takeTile(platz, i),
-      )
+    if (farbeSortierer[0] != null) {
+      ctx.fillStyle = farbeSortierer[0]
+      ctx.fillRect(a - 50, b, 50, 50)
+      onClick(a - 50, b, 50, 50, () => moves.takeTile(platz, 0))
     }
 
-    // ctx.fillStyle = farbeSortierer[0]
-    // ctx.fillRect(a, b, 50, 50)
-    // onClick(a, b, 50, 50, () => moves.takeTile(platz, 0))
-    // ctx.fillStyle = farbeSortierer[0]
-    // ctx.fillRect(a, b, 50, 50)
-    // onClick(a, b, 50, 50, () => moves.takeTile(platz, 1))
-    // ctx.fillStyle = farbeSortierer[2]
-    // ctx.fillRect(a - 50, b + 50, 50, 50)
-    // onClick(a - 50, b + 50, 50, 50, () => moves.takeTile(platz, 2))
-    // ctx.fillStyle = farbeSortierer[3]
-    // ctx.fillRect(a, b + 50, 50, 50)
-    // onClick(a, b + 50, 50, 50, () => moves.takeTile(platz, 3))
+    ctx.fillStyle = farbeSortierer[1]
+    ctx.fillRect(a, b, 50, 50)
+    onClick(a, b, 50, 50, () => moves.takeTile(platz, 1))
+
+    ctx.fillStyle = farbeSortierer[2]
+    ctx.fillRect(a - 50, b + 50, 50, 50)
+    onClick(a - 50, b + 50, 50, 50, () => moves.takeTile(platz, 2))
+
+    ctx.fillStyle = farbeSortierer[3]
+    ctx.fillRect(a, b + 50, 50, 50)
+    onClick(a, b + 50, 50, 50, () => moves.takeTile(platz, 3))
   }
   for (let punkt of mittelpunkte) {
     let a = punkt[0]
