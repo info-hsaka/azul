@@ -103,23 +103,23 @@ export function draw(
   ctx.stroke()
 
   let platz = 0
-  function quadrateLegen(a, b) {
+  function quadrateLegen(a, b, platz) {
     let farbeSortierer = state.G.manufaktur[platz]
     ctx.fillStyle = farbeSortierer[0]
     ctx.fillRect(a - 50, b, 50, 50)
     console.log(platz)
     onClick(a - 50, b, 50, 50, () => moves.takeTile(platz, 0))
     ctx.fillStyle = farbeSortierer[1]
-    ctx.fillRect(a, b + 50, 50, 50)
+    ctx.fillRect(a, b, 50, 50)
     ctx.fillStyle = farbeSortierer[2]
     ctx.fillRect(a - 50, b + 50, 50, 50)
     ctx.fillStyle = farbeSortierer[3]
-    ctx.fillRect(a, b, 50, 50)
+    ctx.fillRect(a, b + 50, 50, 50)
   }
   for (let punkt of mittelpunkte) {
     let a = punkt[0]
     let b = punkt[1]
-    quadrateLegen(a, b)
+    quadrateLegen(a, b, platz)
     if (platz < 8) {
       platz = platz + 1
     }
