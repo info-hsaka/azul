@@ -6,7 +6,7 @@ export const Game = {
   setup: ({ random, ctx }) => {
     const tiles = {
       schwarz: "black",
-      weiß: "rgb:(",
+      weiß: "rgba(209, 209, 209, 0.66)",
       gelb: "yellow",
       blau: "blue",
       rot: "red",
