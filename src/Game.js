@@ -5,11 +5,11 @@ import { TurnOrder } from "boardgame.io/core"
 export const Game = {
   setup: ({ random, ctx }) => {
     const tiles = {
-      schwarz: "schwarz",
-      weiß: "weiß",
-      gelb: "gelb",
-      blau: "blau",
-      rot: "rot",
+      schwarz: "black",
+      weiß: "white",
+      gelb: "yellow",
+      blau: "blue",
+      rot: "red",
     }
 
     let sack = []
