@@ -74,15 +74,16 @@ export function draw(
   })
 
   /*let y = 200
-  let x = 200
+
+  while
 let pyramideIndex = 0
 let pyramideIndexNochTiefer = 0
-  function quadratInPyramide(x, y, pyramideIndex, pyramideIndexNochTiefer) {
+  function quadratInPyramide( y, pyramideIndex, pyramideIndexNochTiefer) {
     let tileFarbe= state.G.pyramide[pyramideIndex][pyramideIndexNochTiefer]
 
     if (tileFarbe[0] != null&& tileFarbe[0] != undefined) {
       ctx.fillStyle = tileFarbe[0]
-      ctx.fillRect(x, y, 50, 50)
+      ctx.fillRect(200, y, 50, 50)
     }
     if (tileFarbe[1] != null&& tileFarbe[1] != undefined) {
       ctx.fillStyle = tileFarbe[1]
