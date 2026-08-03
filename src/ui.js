@@ -58,7 +58,7 @@ export function draw(
   ctx.fill()
 
   onClick(0, 400, 250, 50, () => {
-    console.log("Hallo")
+    moves.pushPyramide(4)
   }) //=> moves.takeTile(platz, 1))
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
