@@ -79,6 +79,7 @@ export function draw(
     let tileFarbe = state.G.pyramide[pyramideIndex][pyramideIndexNochTiefer]
     let y = 200
     while (y < 450) {
+      //die if s
       if (tileFarbe[0] != null && tileFarbe[0] != undefined) {
         ctx.fillStyle = tileFarbe[0]
         ctx.fillRect(200, y, 50, 50)
