@@ -73,39 +73,36 @@ export function draw(
     moves.pushPyramide(0)
   })
 
-  /*let y = 200
+  let pyramideIndex = 0
+  let pyramideIndexNochTiefer = 0
+  function quadratInPyramide(pyramideIndex, pyramideIndexNochTiefer) {
+    let tileFarbe = state.G.pyramide[pyramideIndex][pyramideIndexNochTiefer]
+    let y = 200
+    while (y < 450) {
+      if (tileFarbe[0] != null && tileFarbe[0] != undefined) {
+        ctx.fillStyle = tileFarbe[0]
+        ctx.fillRect(200, y, 50, 50)
+      }
+      if (tileFarbe[1] != null && tileFarbe[1] != undefined) {
+        ctx.fillStyle = tileFarbe[1]
+        ctx.fillRect(150, y, 50, 50)
+      }
+      if (tileFarbe[2] != null && tileFarbe[2] != undefined) {
+        ctx.fillStyle = tileFarbe[2]
+        ctx.fillRect(100, y, 50, 50)
+      }
+      if (tileFarbe[3] != null && tileFarbe[3] != undefined) {
+        ctx.fillStyle = tileFarbe[3]
+        ctx.fillRect(50, y, 50, 50)
+      }
+      if (tileFarbe[4] != null && tileFarbe[4] != undefined) {
+        ctx.fillStyle = tileFarbe[4]
+        ctx.fillRect(0, y, 50, 50)
+      }
+      y = y + 50
+    }
+  }
 
-  while
-let pyramideIndex = 0
-let pyramideIndexNochTiefer = 0
-  function quadratInPyramide( y, pyramideIndex, pyramideIndexNochTiefer) {
-    let tileFarbe= state.G.pyramide[pyramideIndex][pyramideIndexNochTiefer]
-
-    if (tileFarbe[0] != null&& tileFarbe[0] != undefined) {
-      ctx.fillStyle = tileFarbe[0]
-      ctx.fillRect(200, y, 50, 50)
-    }
-    if (tileFarbe[1] != null&& tileFarbe[1] != undefined) {
-      ctx.fillStyle = tileFarbe[1]
-      ctx.fillRect(x, y, 50, 50)
-    }
-    if (tileFarbe[2] != null&& tileFarbe[2] != undefined) {
-      ctx.fillStyle = tileFarbe[2]
-      ctx.fillRect(x, y, 50, 50)
-    }
-    if (tileFarbe[3] != null&& tileFarbe[3] != undefined) {
-      ctx.fillStyle = tileFarbe[3]
-      ctx.fillRect(x, y, 50, 50)
-    }
-    if (tileFarbe[4] != null&& tileFarbe[4] != undefined) {
-      ctx.fillStyle = tileFarbe[4]
-      ctx.fillRect(x, y, 50, 50)
-    }
-
-
-
-    }
-  }*/
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
 
