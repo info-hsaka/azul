@@ -93,7 +93,7 @@ export const Game = {
     },
 
     pushPyramide: function pushPyramide(move, inventory) {
-      move.G.pyramide.push(move.G.inventory)
+      move.G.pyramide[indexAnzeiger].push(move.G.inventory)
     },
   },
 
