@@ -59,7 +59,20 @@ export function draw(
 
   onClick(0, 400, 250, 50, () => {
     moves.pushPyramide(4)
-  }) //=> moves.takeTile(platz, 1))
+  })
+  onClick(50, 350, 200, 50, () => {
+    moves.pushPyramide(3)
+  })
+  onClick(100, 300, 150, 50, () => {
+    moves.pushPyramide(2)
+  })
+  onClick(150, 250, 100, 50, () => {
+    moves.pushPyramide(1)
+  })
+  onClick(200, 200, 50, 50, () => {
+    moves.pushPyramide(0)
+  })
+
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
   /*
