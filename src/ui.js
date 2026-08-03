@@ -73,7 +73,8 @@ export function draw(
     moves.pushPyramide(0)
   })
 
-  /*let y =
+  /*let y = 200
+  let x = 200
 let pyramideIndex = 0
 let pyramideIndexNochTiefer = 0
   function quadratInPyramide(x, y, pyramideIndex, pyramideIndexNochTiefer) {
@@ -103,10 +104,10 @@ let pyramideIndexNochTiefer = 0
 
 
     }
-  }
+  }*/
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
-  /*
+
   let e = 0
   while (e < 1500) {
     ctx.strokeStyle = "red"
@@ -124,7 +125,7 @@ let pyramideIndexNochTiefer = 0
     ctx.lineTo(3000, f)
     ctx.stroke()
     f = f + 25
-  }*/
+  }
   // while schleife für die Platten
   let mittelpunkte = []
   let p = 725
