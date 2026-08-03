@@ -57,7 +57,9 @@ export function draw(
   ctx.closePath()
   ctx.fill()
 
-  //onClick(, b, 50, 50, () => moves.takeTile(platz, 1))
+  onClick(0, 400, 250, 50, () => {
+    console.log("Hallo")
+  }) //=> moves.takeTile(platz, 1))
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
   /*
