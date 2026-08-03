@@ -92,8 +92,9 @@ export const Game = {
       move.G.manufaktur[manufakturindex][tileindex] = null
     },
 
-    pushPyramide: function pushPyramide(move, inventory) {
+    pushPyramide: function pushPyramide(move, indexAnzeiger) {
       move.G.pyramide[indexAnzeiger].push(move.G.inventory)
+      move.G.inventory = []
     },
   },
 

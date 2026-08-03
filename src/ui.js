@@ -52,7 +52,7 @@ export function draw(
   ctx.fillStyle = "white"
   ctx.beginPath()
   ctx.moveTo(0, 400)
-  ctx.lineTo(0, 200)
+  ctx.lineTo(0, 190)
   ctx.lineTo(250, 150)
   ctx.closePath()
   ctx.fill()
