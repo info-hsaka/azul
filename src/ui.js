@@ -30,7 +30,7 @@ export function draw(
     ctx.stroke()
     b1 = b1 + 50
   }
-//PYRAMIDE
+  //PYRAMIDE
   ctx.strokeRect(0, 200, 250, 250)
   let c1 = 0
   while (c1 < 550) {
@@ -73,6 +73,7 @@ export function draw(
     moves.pushPyramide(0)
   })
 
+  /*let y =
 let pyramideIndex = 0
 let pyramideIndexNochTiefer = 0
   function quadratInPyramide(x, y, pyramideIndex, pyramideIndexNochTiefer) {
