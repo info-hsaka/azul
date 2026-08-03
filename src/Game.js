@@ -93,7 +93,7 @@ export const Game = {
     },
 
     pushPyramide: function pushPyramide(move, indexAnzeiger) {
-      move.G.pyramide[indexAnzeiger].push(move.G.inventory)
+      //move.G.pyramide[indexAnzeiger].push(move.G.inventory[0])
       let nullOrt = move.G.pyramide[indexAnzeiger].indexOf(null)
       move.G.pyramide[indexAnzeiger][nullOrt] = move.G.inventory[0]
       move.G.inventory = []
