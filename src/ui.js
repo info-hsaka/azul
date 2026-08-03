@@ -30,7 +30,7 @@ export function draw(
     ctx.stroke()
     b1 = b1 + 50
   }
-
+//PYRAMIDE
   ctx.strokeRect(0, 200, 250, 250)
   let c1 = 0
   while (c1 < 550) {
@@ -73,6 +73,36 @@ export function draw(
     moves.pushPyramide(0)
   })
 
+let pyramideIndex = 0
+let pyramideIndexNochTiefer = 0
+  function quadratInPyramide(x, y, pyramideIndex, pyramideIndexNochTiefer) {
+    let tileFarbe= state.G.pyramide[pyramideIndex][pyramideIndexNochTiefer]
+
+    if (tileFarbe[0] != null&& tileFarbe[0] != undefined) {
+      ctx.fillStyle = tileFarbe[0]
+      ctx.fillRect(x, y, 50, 50)
+    }
+    if (tileFarbe[1] != null&& tileFarbe[1] != undefined) {
+      ctx.fillStyle = tileFarbe[1]
+      ctx.fillRect(x, y, 50, 50)
+    }
+    if (tileFarbe[2] != null&& tileFarbe[2] != undefined) {
+      ctx.fillStyle = tileFarbe[2]
+      ctx.fillRect(x, y, 50, 50)
+    }
+    if (tileFarbe[3] != null&& tileFarbe[3] != undefined) {
+      ctx.fillStyle = tileFarbe[3]
+      ctx.fillRect(x, y, 50, 50)
+    }
+    if (tileFarbe[4] != null&& tileFarbe[4] != undefined) {
+      ctx.fillStyle = tileFarbe[4]
+      ctx.fillRect(x, y, 50, 50)
+    }
+
+
+
+    }
+  }
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
   /*
