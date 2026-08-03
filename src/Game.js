@@ -92,7 +92,9 @@ export const Game = {
       move.G.manufaktur[manufakturindex][tileindex] = null
     },
 
-    // pushPyramide: function pushPyramide (move, inventory)
+    pushPyramide: function pushPyramide(move, inventory) {
+      move.G.pyramide.push(move.G.inventory)
+    },
   },
 
   seed: "random-seed",
