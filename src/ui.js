@@ -36,18 +36,14 @@ export function draw(
   while (y < 5) {
     x = 0
     while (x < 5) {
-      const neuesX = x
-      const neuesY = y
       ctx.strokeRect(x * 50, y * 50, 50, 50)
-      onClick(x * 50, y * 50, 50, 50, () => {
-        console.log(neuesX, neuesY)
-      })
+      onClick(x * 50, y * 50, 50, 50, () => {})
       x = x + 1
     }
     y = y + 1
   }
   //PYRAMIDE
-  ctx.strokeRect(0, 200, 250, 250)
+  /*ctx.strokeRect(0, 200, 250, 250)
   let c1 = 0
   while (c1 < 550) {
     ctx.beginPath()
@@ -71,7 +67,7 @@ export function draw(
   ctx.lineTo(0, 190)
   ctx.lineTo(250, 150)
   ctx.closePath()
-  ctx.fill()
+  ctx.fill()*/
 
   onClick(0, 400, 250, 50, () => {
     moves.pushPyramide(4)
