@@ -86,9 +86,14 @@ export const Game = {
     /** @type {Move} */
 
     takeTile: function takeTile(move, manufakturindex, tileindex) {
-      move.G.inventory.push(move.G.manufaktur[manufakturindex][tileindex])
-      move.G.manufaktur[manufakturindex][tileindex] = null
-      move.G.mitte.push(move.G.manufaktur[manufakturindex][tileindex])
+      let d = 0
+      while (d < 4) {
+        if (tileindex == d) {
+          move.G.inventory.push(move.G.manufaktur[manufakturindex][tileindex])
+          move.G.manufaktur[manufakturindex][tileindex]
+        }
+        d = d + 1
+      }
     },
 
     pushPyramide: function pushPyramide(move, indexAnzeiger) {
