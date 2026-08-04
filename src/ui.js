@@ -36,9 +36,11 @@ export function draw(
   while (y < 5) {
     x = 0
     while (x < 5) {
+      const neuesX = x
+      const neuesY = y
       ctx.strokeRect(x * 50, y * 50, 50, 50)
       onClick(x * 50, y * 50, 50, 50, () => {
-        console.log(x, y)
+        console.log(neuesX, neuesY)
       })
       x = x + 1
     }
