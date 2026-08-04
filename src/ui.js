@@ -36,8 +36,10 @@ export function draw(
   while (y < 5) {
     x = 0
     while (x < 5) {
-      ctx.strokeRect(0, 0, 50, 50)
-
+      ctx.strokeRect(x * 50, y * 50, 50, 50)
+      onClick(x * 50, y * 50, 50, 50, () => {
+        console.log(x, y)
+      })
       x = x + 1
     }
     y = y + 1
@@ -107,7 +109,7 @@ export function draw(
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
 
-  let e = 0
+  /*let e = 0
   while (e < 1500) {
     ctx.strokeStyle = "red"
     ctx.beginPath()
@@ -124,7 +126,7 @@ export function draw(
     ctx.lineTo(3000, f)
     ctx.stroke()
     f = f + 25
-  }
+  }*/
   // while schleife für die Platten
   let mittelpunkte = []
   let p = 725
