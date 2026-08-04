@@ -33,24 +33,25 @@ export function draw(
 
   let x = 0
   let y = 0
+  if (state.G.inventory.length > 0) {
+    while (y < 5) {
+      x = 0
+      while (x < 5) {
+        if (x + y < 4) {
+          x = x + 1
+          continue
+        }
+        ctx.strokeRect(x * 50, y * 50 + 200, 50, 50)
+        let tileFarbe = state.G.pyramide[y][4 - x]
+        if (tileFarbe != null && tileFarbe != undefined) {
+          ctx.fillStyle = tileFarbe
+          ctx.fillRect(x * 50, y * 50 + 200, 50, 50)
+        }
 
-  while (y < 5) {
-    x = 0
-    while (x < 5) {
-      if (x + y < 4) {
         x = x + 1
-        continue
       }
-      ctx.strokeRect(x * 50, y * 50 + 200, 50, 50)
-      let tileFarbe = state.G.pyramide[y][4 - x]
-      if (tileFarbe != null && tileFarbe != undefined) {
-        ctx.fillStyle = tileFarbe
-        ctx.fillRect(x * 50, y * 50 + 200, 50, 50)
-      }
-
-      x = x + 1
+      y = y + 1
     }
-    y = y + 1
   }
   //PYRAMIDE
   /*ctx.strokeRect(0, 200, 250, 250)
