@@ -33,68 +33,42 @@ export function draw(
 
   let x = 0
   let y = 0
-  if (state.G.inventory.length > 0) {
-    while (y < 5) {
-      x = 0
-      while (x < 5) {
-        if (x + y < 4) {
-          x = x + 1
-          continue
-        }
-        ctx.strokeRect(x * 50, y * 50 + 200, 50, 50)
-        let tileFarbe = state.G.pyramide[y][4 - x]
-        if (tileFarbe != null && tileFarbe != undefined) {
-          ctx.fillStyle = tileFarbe
-          ctx.fillRect(x * 50, y * 50 + 200, 50, 50)
-        }
-
+  while (y < 5) {
+    x = 0
+    while (x < 5) {
+      if (x + y < 4) {
         x = x + 1
+        continue
       }
-      y = y + 1
+      ctx.strokeRect(x * 50, y * 50 + 200, 50, 50)
+      let tileFarbe = state.G.pyramide[y][4 - x]
+      if (tileFarbe != null && tileFarbe != undefined) {
+        ctx.fillStyle = tileFarbe
+        ctx.fillRect(x * 50, y * 50 + 200, 50, 50)
+      }
+
+      x = x + 1
     }
-  }
-  //PYRAMIDE
-  /*ctx.strokeRect(0, 200, 250, 250)
-  let c1 = 0
-  while (c1 < 550) {
-    ctx.beginPath()
-    ctx.moveTo(c1, 200)
-    ctx.lineTo(c1, 450)
-    ctx.stroke()
-    c1 = c1 + 50
+    y = y + 1
   }
 
-  let d1 = 250
-  while (d1 < 450) {
-    ctx.beginPath()
-    ctx.moveTo(0, d1)
-    ctx.lineTo(250, d1)
-    ctx.stroke()
-    d1 = d1 + 50
+  if (state.G.inventory.length > 0) {
+    onClick(0, 400, 250, 50, () => {
+      moves.pushPyramide(4)
+    })
+    onClick(50, 350, 200, 50, () => {
+      moves.pushPyramide(3)
+    })
+    onClick(100, 300, 150, 50, () => {
+      moves.pushPyramide(2)
+    })
+    onClick(150, 250, 100, 50, () => {
+      moves.pushPyramide(1)
+    })
+    onClick(200, 200, 50, 50, () => {
+      moves.pushPyramide(0)
+    })
   }
-  ctx.fillStyle = "white"
-  ctx.beginPath()
-  ctx.moveTo(0, 400)
-  ctx.lineTo(0, 190)
-  ctx.lineTo(250, 150)
-  ctx.closePath()
-  ctx.fill()*/
-
-  onClick(0, 400, 250, 50, () => {
-    moves.pushPyramide(4)
-  })
-  onClick(50, 350, 200, 50, () => {
-    moves.pushPyramide(3)
-  })
-  onClick(100, 300, 150, 50, () => {
-    moves.pushPyramide(2)
-  })
-  onClick(150, 250, 100, 50, () => {
-    moves.pushPyramide(1)
-  })
-  onClick(200, 200, 50, 50, () => {
-    moves.pushPyramide(0)
-  })
 
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
@@ -177,57 +151,4 @@ export function draw(
       platz = platz + 1
     }
   }
-
-  /*ctx.beginPath()
-  ctx.arc(725, 150, 75, 0, 2 * Math.PI)
-  ctx.strokeStyle = "black"
-  ctx.stroke()
-  ctx.beginPath()
-  ctx.arc(925, 150, 75, 0, 2 * Math.PI)
-  ctx.strokeStyle = "black"
-  ctx.stroke()*/
-
-  /* ctx.strokeRect(300, 200, 250, 250)
-  let a2 = 350
-  while (a2 < 550) {
-    ctx.beginPath()
-    ctx.moveTo(a2, 200)
-    ctx.lineTo(a2, 450)
-    ctx.stroke()
-    a2 = a + 50
-  }
-  let b2 = 250
-  while (b2 < 450) {
-    ctx.beginPath()
-    ctx.moveTo(300, b2)
-    ctx.lineTo(550, b2)
-    ctx.stroke()
-    b2 = b2 + 50
-  }
-
-  ctx.strokeRect(0, 200, 250, 250)
-  let c2 = 0
-  while (c2 < 550) {
-    ctx.beginPath()
-    ctx.moveTo(c2, 200)
-    ctx.lineTo(c2, 450)
-    ctx.stroke()
-    c2 = c2 + 50
-  }
-
-  let d2 = 250
-  while (d2 < 450) {
-    ctx.beginPath()
-    ctx.moveTo(0, d2)
-    ctx.lineTo(250, d2)
-    ctx.stroke()
-    d2 = d2 + 50
-  }
-  ctx.fillStyle = "white"
-  ctx.beginPath()
-  ctx.moveTo(0, 400)
-  ctx.lineTo(0, 200)
-  ctx.lineTo(250, 150)
-  ctx.closePath()
-  ctx.fill()*/
 }
