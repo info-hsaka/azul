@@ -88,7 +88,7 @@ export const Game = {
     takeTile: function takeTile(move, manufakturindex, tileindex) {
       move.G.inventory.push(move.G.manufaktur[manufakturindex][tileindex])
       move.G.manufaktur[manufakturindex][tileindex] = null
-      move.G.mitte.push(move.G.manufaktur[manufakturindex])
+      move.G.mitte.push(move.G.manufaktur[manufakturindex][tileindex])
     },
 
     pushPyramide: function pushPyramide(move, indexAnzeiger) {
