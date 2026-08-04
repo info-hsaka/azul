@@ -77,35 +77,19 @@ export function draw(
   let pyramideIndexNochTiefer = 0
   function quadratInPyramide(pyramideIndex, pyramideIndexNochTiefer) {
     let tileFarbe = state.G.pyramide[pyramideIndex][pyramideIndexNochTiefer]
-    let y = 200
-    while (y < 450) {
-      // wile schleife betrachtet das gesamte dreieck soll das so sein?
-      //klicken funnktionirt, zeichnen aber nicht
-      if (tileFarbe != null && tileFarbe != undefined) {
-        ctx.fillStyle = tileFarbe
-        ctx.fillRect(200, y, 50, 50)
-      }
-      if (tileFarbe != null && tileFarbe != undefined) {
-        ctx.fillStyle = tileFarbe
-        ctx.fillRect(150, y, 50, 50)
-      }
-      if (tileFarbe != null && tileFarbe != undefined) {
-        ctx.fillStyle = tileFarbe
-        ctx.fillRect(100, y, 50, 50)
-      }
-      if (tileFarbe != null && tileFarbe != undefined) {
-        ctx.fillStyle = tileFarbe
-        ctx.fillRect(50, y, 50, 50)
-      }
-      if (tileFarbe != null && tileFarbe != undefined) {
-        ctx.fillStyle = tileFarbe
-        ctx.fillRect(0, y, 50, 50)
-      }
-      y = y + 50
-      //pyramideIndex = pyramideIndex + 1
-      pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
+    let y = 400
+    let x = 0
+    // wile schleife betrachtet das gesamte dreieck soll das so sein?
+    //klicken funnktionirt, zeichnen aber nicht
+    if (tileFarbe != null && tileFarbe != undefined) {
+      ctx.fillStyle = tileFarbe
+      ctx.fillRect(x, y, 50, 50)
     }
+    //y = y + 50
+    //pyramideIndex = pyramideIndex + 1
+    pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
   }
+
   quadratInPyramide(pyramideIndex, pyramideIndexNochTiefer)
 
   console.log(state.G.manufaktur[0])
