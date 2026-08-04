@@ -30,7 +30,7 @@ export function draw(
     ctx.stroke()
     b1 = b1 + 50
   }
-
+  // Pyramide
   let x = 0
   let y = 0
   while (y < 5) {
