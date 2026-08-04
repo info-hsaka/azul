@@ -81,28 +81,28 @@ export function draw(
     while (y < 450) {
       // wile schleife betrachtet das gesamte dreieck soll das so sein?
       //klicken funnktionirt, zeichnen aber nicht
-      if (tileFarbe[0] != null && tileFarbe[0] != undefined) {
-        ctx.fillStyle = tileFarbe[0]
+      if (tileFarbe != null && tileFarbe != undefined) {
+        ctx.fillStyle = tileFarbe
         ctx.fillRect(200, y, 50, 50)
       }
-      if (tileFarbe[1] != null && tileFarbe[1] != undefined) {
-        ctx.fillStyle = tileFarbe[1]
+      if (tileFarbe != null && tileFarbe != undefined) {
+        ctx.fillStyle = tileFarbe
         ctx.fillRect(150, y, 50, 50)
       }
-      if (tileFarbe[2] != null && tileFarbe[2] != undefined) {
-        ctx.fillStyle = tileFarbe[2]
+      if (tileFarbe != null && tileFarbe != undefined) {
+        ctx.fillStyle = tileFarbe
         ctx.fillRect(100, y, 50, 50)
       }
-      if (tileFarbe[3] != null && tileFarbe[3] != undefined) {
-        ctx.fillStyle = tileFarbe[3]
+      if (tileFarbe != null && tileFarbe != undefined) {
+        ctx.fillStyle = tileFarbe
         ctx.fillRect(50, y, 50, 50)
       }
-      if (tileFarbe[4] != null && tileFarbe[4] != undefined) {
-        ctx.fillStyle = tileFarbe[4]
+      if (tileFarbe != null && tileFarbe != undefined) {
+        ctx.fillStyle = tileFarbe
         ctx.fillRect(0, y, 50, 50)
       }
       y = y + 50
-      pyramideIndex = pyramideIndex + 1
+      //pyramideIndex = pyramideIndex + 1
       pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
     }
   }
