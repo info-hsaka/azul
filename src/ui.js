@@ -80,7 +80,7 @@ export function draw(
     let y = 200
     while (y < 450) {
       // wile schleife betrachtet das gesamte dreieck soll das so sein?
-      //if sentences sollen die
+      //klicken funnktionirt, zeichnen aber nicht
       if (tileFarbe[0] != null && tileFarbe[0] != undefined) {
         ctx.fillStyle = tileFarbe[0]
         ctx.fillRect(200, y, 50, 50)
@@ -102,6 +102,8 @@ export function draw(
         ctx.fillRect(0, y, 50, 50)
       }
       y = y + 50
+      pyramideIndex = pyramideIndex + 1
+      pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
     }
   }
 
