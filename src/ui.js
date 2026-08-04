@@ -87,7 +87,7 @@ export function draw(
     }
     //y = y + 50
     //pyramideIndex = pyramideIndex + 1
-    pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
+    // pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
   }
 
   quadratInPyramide(pyramideIndex, pyramideIndexNochTiefer)
