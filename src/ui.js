@@ -30,11 +30,10 @@ export function draw(
     ctx.stroke()
     b1 = b1 + 50
   }
-  let pyramideIndex = 0
-  let pyramideIndexNochTiefer = 0
+
   let x = 0
   let y = 0
-  let tileFarbe = state.G.pyramide[pyramideIndex][pyramideIndexNochTiefer]
+  let tileFarbe = state.G.pyramide[x][pyramideIndexNochTiefer]
 
   while (y < 5) {
     x = 0
