@@ -106,6 +106,7 @@ export function draw(
       pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
     }
   }
+  quadratInPyramide(pyramideIndex, pyramideIndexNochTiefer)
 
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
