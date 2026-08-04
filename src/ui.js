@@ -37,7 +37,8 @@ export function draw(
     x = 0
     while (x < 5) {
       ctx.strokeRect(x * 50, y * 50, 50, 50)
-      if (x * 50 < 250 && y * 50 < 250) {
+      if (x + y < 5) {
+        x = x + 1
         continue
       }
       onClick(x * 50, y * 50, 50, 50, () => {})
