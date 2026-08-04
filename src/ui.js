@@ -30,9 +30,12 @@ export function draw(
     ctx.stroke()
     b1 = b1 + 50
   }
-
+  let pyramideIndex = 0
+  let pyramideIndexNochTiefer = 0
   let x = 0
   let y = 0
+  let tileFarbe = state.G.pyramide[pyramideIndex][pyramideIndexNochTiefer]
+
   while (y < 5) {
     x = 0
     while (x < 5) {
@@ -40,7 +43,12 @@ export function draw(
         x = x + 1
         continue
       }
-      ctx.strokeRect(x * 50, y * 5 + 200, 50, 50)
+      ctx.strokeRect(x * 50, y * 50 + 200, 50, 50)
+
+      if (tileFarbe != null && tileFarbe != undefined) {
+        ctx.fillStyle = tileFarbe
+        ctx.fillRect(x, y, 50, 50)
+      }
       onClick(x * 50, y * 50, 50, 50, () => {})
 
       x = x + 1
@@ -90,18 +98,12 @@ export function draw(
     moves.pushPyramide(0)
   })
 
-  let pyramideIndex = 0
-  let pyramideIndexNochTiefer = 0
   function quadratInPyramide(pyramideIndex, pyramideIndexNochTiefer) {
-    let tileFarbe = state.G.pyramide[pyramideIndex][pyramideIndexNochTiefer]
     let y = 400
     let x = 0
     // wile schleife betrachtet das gesamte dreieck soll das so sein?
     //klicken funnktionirt, zeichnen aber nicht
-    if (tileFarbe != null && tileFarbe != undefined) {
-      ctx.fillStyle = tileFarbe
-      ctx.fillRect(x, y, 50, 50)
-    }
+
     //y = y + 50
     //pyramideIndex = pyramideIndex + 1
     // pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
