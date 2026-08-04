@@ -30,6 +30,18 @@ export function draw(
     ctx.stroke()
     b1 = b1 + 50
   }
+
+  let x = 0
+  let y = 0
+  while (y < 5) {
+    x = 0
+    while (x < 5) {
+      ctx.strokeRect(0, 0, 50, 50)
+
+      x = x + 1
+    }
+    y = y + 1
+  }
   //PYRAMIDE
   ctx.strokeRect(0, 200, 250, 250)
   let c1 = 0
