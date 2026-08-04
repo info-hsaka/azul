@@ -47,13 +47,14 @@ export function draw(
 
       if (tileFarbe != null && tileFarbe != undefined) {
         ctx.fillStyle = tileFarbe
-        ctx.fillRect(x, y, 50, 50)
+        ctx.fillRect(x * 50, y * 50 + 200, 50, 50)
       }
-      onClick(x * 50, y * 50, 50, 50, () => {})
+      //onClick(x * 50, y * 50, 50, 50, () => {})
 
       x = x + 1
     }
     y = y + 1
+    pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
   }
   //PYRAMIDE
   /*ctx.strokeRect(0, 200, 250, 250)
@@ -106,7 +107,7 @@ export function draw(
 
     //y = y + 50
     //pyramideIndex = pyramideIndex + 1
-    // pyramideIndexNochTiefer = pyramideIndexNochTiefer + 1
+    //
   }
 
   quadratInPyramide(pyramideIndex, pyramideIndexNochTiefer)
