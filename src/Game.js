@@ -89,11 +89,11 @@ export const Game = {
       let d = 0
       while (d < 4) {
         if (tileindex == d) {
-          move.G.inventory.push(move.G.manufaktur[manufakturindex][tileindex])
-          move.G.manufaktur[manufakturindex][tileindex] = null
+          move.G.inventory.push(move.G.manufaktur[manufakturindex][d])
+          move.G.manufaktur[manufakturindex][d] = null
         } else {
-          move.G.mitte.push(move.G.manufaktur[manufakturindex][tileindex])
-          move.G.manufaktur[manufakturindex][tileindex] = null
+          move.G.mitte.push(move.G.manufaktur[manufakturindex][d])
+          move.G.manufaktur[manufakturindex][d] = null
         }
         d = d + 1
       }
