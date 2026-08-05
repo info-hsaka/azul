@@ -158,5 +158,13 @@ export function draw(
   let anzahlGelb =0
   let anzahlSchwarz =0
 
-  for (let tile of mitte)
+  for (let tile of state.G.mitte){
+    if (tile == weiß) {
+      anzahlWeiß = anzahlWeiß + 1
+    }
+    if (tile == rot){
+      anzahlRot = anzahlRot + 1
+    }
+    if (tile == blau)
+  }
 }
