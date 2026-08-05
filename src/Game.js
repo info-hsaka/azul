@@ -112,7 +112,12 @@ export const Game = {
       }
     },
     mitteZumInventory: function mitteZumInventory(move, Farbe) {
-      console.log(Farbe)
+      let z = 0
+      while (z < mitte.length) {
+        if (move.G.mitte[z] == Farbe) {
+          move.G.mitte.splice(z, 1)
+        }
+      }
     },
   },
 
