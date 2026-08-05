@@ -113,9 +113,9 @@ export const Game = {
     },
     mitteZumInventory: function mitteZumInventory(move, Farbe) {
       let z = 0
-      while (z < mitte.length) {
+      while (z < move.G.mitte.length) {
         if (move.G.mitte[z] == Farbe) {
-          move.G.mitte.splice(z, 1)
+          let Tiles = move.G.mitte.splice(z, 1)
         } else {
           z = z + 1
         }

@@ -188,12 +188,15 @@ export function draw(
 
   ctx.fillStyle = tiles.blau
   ctx.fillRect(100, 750, 100, 100)
+  onClick(100, 750, 100, 100, () => moves.mitteZumInventory(tiles.blau))
 
   ctx.fillStyle = tiles.schwarz
   ctx.fillRect(350, 750, 100, 100)
+  onClick(350, 750, 100, 100, () => moves.mitteZumInventory(tiles.schwarz))
 
   ctx.fillStyle = tiles.gelb
   ctx.fillRect(225, 900, 100, 100)
+  onClick(225, 900, 100, 100, () => moves.mitteZumInventory(tiles.gelb))
 
   //Zeigt uns die Anzahl der jeweiligen Teils in der Mitte an
   ctx.textAlign = "left"
