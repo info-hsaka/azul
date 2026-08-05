@@ -1,17 +1,17 @@
 /** @import { Game, Move } from "boardgame.io" */
 import { TurnOrder } from "boardgame.io/core"
 
+export const tiles = {
+  schwarz: "black",
+  weiß: "rgba(209, 209, 209, 0.66)",
+  gelb: "yellow",
+  blau: "blue",
+  rot: "red",
+}
+
 /** @type {Game} */
 export const Game = {
   setup: ({ random, ctx }) => {
-    const tiles = {
-      schwarz: "black",
-      weiß: "rgba(209, 209, 209, 0.66)",
-      gelb: "yellow",
-      blau: "blue",
-      rot: "red",
-    }
-
     let sack = []
     let i = 1
     while (i <= 20) {

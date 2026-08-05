@@ -2,7 +2,7 @@
 /** @import { Game } from "./Game" */
 
 import { onClick } from "./canvas.js"
-
+import { tiles } from "./Game.js"
 export function draw(
   /** @type {ClientState<[ReturnType<Game["setup"]>]>} */
   state,
