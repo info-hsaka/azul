@@ -158,7 +158,7 @@ export function draw(
   let anzahlGelb = 0
   let anzahlSchwarz = 0
 
-  /*for (let tile of state.G.mitte) {
+  for (let tile of state.G.mitte) {
     if (tile == tiles.weiß) {
       anzahlWeiß = anzahlWeiß + 1
     }
@@ -174,5 +174,5 @@ export function draw(
     if (tile == tiles.schwarz) {
       anzahlSchwarz = anzahlSchwarz + 1
     }
-  }*/
+  }
 }
