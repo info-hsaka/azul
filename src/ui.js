@@ -175,6 +175,15 @@ export function draw(
       anzahlSchwarz = anzahlSchwarz + 1
     }
   }
+
   ctx.fillStyle = tiles.weiß
   ctx.fillRect(100, 600, 100, 100)
+  ctx.fillStyle = tiles.rot
+  ctx.fillRect(350, 600, 100, 100)
+  ctx.fillStyle = tiles.blau
+  ctx.fillRect(100, 750, 100, 100)
+  ctx.fillStyle = tiles.schwarz
+  ctx.fillRect(350, 750, 100, 100)
+  ctx.fillStyle = tiles.gelb
+  ctx.fillRect(225, 900, 100, 100)
 }
