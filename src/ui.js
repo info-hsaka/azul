@@ -73,14 +73,14 @@ export function draw(
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
 
-  /*let e = 0
+  let e = 0
   while (e < 1500) {
     ctx.strokeStyle = "red"
     ctx.beginPath()
     ctx.moveTo(e, 0)
     ctx.lineTo(e, 1500)
     ctx.stroke()
-    e = e + 25
+    e = e + 50
   }
   let f = 0
   while (f < 3000) {
@@ -89,8 +89,8 @@ export function draw(
     ctx.moveTo(0, f)
     ctx.lineTo(3000, f)
     ctx.stroke()
-    f = f + 25
-  }*/
+    f = f + 50
+  }
   // while schleife für die Platten
   let mittelpunkte = []
   let p = 725
@@ -175,4 +175,6 @@ export function draw(
       anzahlSchwarz = anzahlSchwarz + 1
     }
   }
+  ctx.fillStyle = tiles.weiß
+  ctx.fillRect(100, 600, 100, 100)
 }
