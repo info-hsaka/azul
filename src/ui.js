@@ -180,13 +180,18 @@ export function draw(
   //zeigt uns die fünf Farben in der mitte an
   ctx.fillStyle = tiles.weiß
   ctx.fillRect(100, 600, 100, 100)
-  onClick(100, 600, 100, 100, () => )
+  onClick(100, 600, 100, 100, () => moves.mitteZumInventory(tiles.weiß))
+
   ctx.fillStyle = tiles.rot
   ctx.fillRect(350, 600, 100, 100)
+  onClick(350, 600, 100, 100, () => moves.mitteZumInventory(tiles.rot))
+
   ctx.fillStyle = tiles.blau
   ctx.fillRect(100, 750, 100, 100)
+
   ctx.fillStyle = tiles.schwarz
   ctx.fillRect(350, 750, 100, 100)
+
   ctx.fillStyle = tiles.gelb
   ctx.fillRect(225, 900, 100, 100)
 
