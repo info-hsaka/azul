@@ -197,4 +197,8 @@ export function draw(
   ctx.strokeText(anzahlWeiß, 100, 600)
   ctx.fillText(anzahlSchwarz, 350, 750)
   ctx.strokeText(anzahlSchwarz, 350, 750)
+  ctx.fillText(anzahl, 350, 750)
+  ctx.strokeText(anzahlSchwarz, 350, 750)
+  ctx.fillText(anzahlSchwarz, 350, 750)
+  ctx.strokeText(anzahlSchwarz, 350, 750)
 }
