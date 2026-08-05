@@ -151,4 +151,6 @@ export function draw(
       platz = platz + 1
     }
   }
+
+  let zahlanzeiger
 }
