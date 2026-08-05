@@ -115,7 +115,8 @@ export const Game = {
       let z = 0
       while (z < move.G.mitte.length) {
         if (move.G.mitte[z] == Farbe) {
-          let Tiles = move.G.mitte.splice(z, 1)
+          let Tiles = move.G.mitte.splice(z, 1)[0]
+          move.G.inventory.push(Tiles)
         } else {
           z = z + 1
         }
