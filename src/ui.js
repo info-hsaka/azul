@@ -30,6 +30,14 @@ export function draw(
     ctx.stroke()
     b1 = b1 + 50
   }
+  let z = 0
+  let v = 0
+  while (v < 5) {
+    z = 0
+    while (z < 5) {
+      // 5*5 Feld  Orientierung an der Pyramide
+    }
+  }
   // Pyramide
   let x = 0
   let y = 0
@@ -73,7 +81,7 @@ export function draw(
   console.log(state.G.manufaktur[0])
   //state.G.manufaktur[0[0]]
 
-  /*let e = 0
+  let e = 0
   while (e < 1500) {
     ctx.strokeStyle = "red"
     ctx.beginPath()
@@ -90,7 +98,7 @@ export function draw(
     ctx.lineTo(3000, f)
     ctx.stroke()
     f = f + 50
-  }*/
+  }
   // while schleife für die Platten
   let mittelpunkte = []
   let p = 725
