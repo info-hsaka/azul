@@ -152,6 +152,7 @@ export function draw(
     }
   }
 
+  //Damit lesen wir aus wie viele Tiles einer Farbe in der Mitte sind
   let anzahlWeiß = 0
   let anzahlRot = 0
   let anzahlBlau = 0
@@ -176,6 +177,7 @@ export function draw(
     }
   }
 
+  //zeigt uns die fünf Farben in der mitte an
   ctx.fillStyle = tiles.weiß
   ctx.fillRect(100, 600, 100, 100)
   ctx.fillStyle = tiles.rot
@@ -187,6 +189,7 @@ export function draw(
   ctx.fillStyle = tiles.gelb
   ctx.fillRect(225, 900, 100, 100)
 
+  //Zeigt uns die Anzahl der jeweiligen Teils in der Mitte an
   ctx.textAlign = "left"
   ctx.textBaseline = "top"
   ctx.font = "50px Arial"
