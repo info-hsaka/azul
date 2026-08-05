@@ -116,6 +116,8 @@ export const Game = {
       while (z < mitte.length) {
         if (move.G.mitte[z] == Farbe) {
           move.G.mitte.splice(z, 1)
+        } else {
+          z = z + 1
         }
       }
     },
