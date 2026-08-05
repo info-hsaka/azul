@@ -86,6 +86,10 @@ export const Game = {
     /** @type {Move} */
 
     takeTile: function takeTile(move, manufakturindex, tileindex) {
+      //welche Farbe hat das angeklickte Tile
+      let Farbechecker =
+
+
       let d = 0
       while (d < 4) {
         if (tileindex == d) {
