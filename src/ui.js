@@ -152,5 +152,11 @@ export function draw(
     }
   }
 
-  let zahlanzeiger
+  let anzahlWeiß = 0
+  let anzahlRot = 0
+  let anzahlBlau = 0
+  let anzahlGelb =0
+  let anzahlSchwarz =0
+
+  for (let tile of mitte)
 }
