@@ -111,6 +111,9 @@ export const Game = {
         //move.G.inventory = []
       }
     },
+    mitteZumInventory: function mitteZumInventory(move, Farbe) {
+      console.log(Farbe)
+    },
   },
 
   seed: "random-seed",

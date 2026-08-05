@@ -180,7 +180,7 @@ export function draw(
   //zeigt uns die fünf Farben in der mitte an
   ctx.fillStyle = tiles.weiß
   ctx.fillRect(100, 600, 100, 100)
-  onClick(100, 600, 100, 100, () => moves.pushPyramide)
+  onClick(100, 600, 100, 100, () => )
   ctx.fillStyle = tiles.rot
   ctx.fillRect(350, 600, 100, 100)
   ctx.fillStyle = tiles.blau
