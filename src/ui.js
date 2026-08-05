@@ -186,4 +186,15 @@ export function draw(
   ctx.fillRect(350, 750, 100, 100)
   ctx.fillStyle = tiles.gelb
   ctx.fillRect(225, 900, 100, 100)
+
+  ctx.textAlign = "left"
+  ctx.textBaseline = "top"
+  ctx.font = "50px Arial"
+  ctx.lineWidth = 1
+  ctx.strokeStyle = "black"
+  ctx.fillStyle = "white"
+  ctx.fillText(anzahlWeiß, 100, 600)
+  ctx.strokeText(anzahlWeiß, 100, 600)
+  ctx.fillText(anzahlSchwarz, 350, 750)
+  ctx.strokeText(anzahlSchwarz, 350, 750)
 }
