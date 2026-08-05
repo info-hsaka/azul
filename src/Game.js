@@ -104,9 +104,10 @@ export const Game = {
 
     pushPyramide: function pushPyramide(move, indexAnzeiger) {
       //move.G.pyramide[indexAnzeiger].push(move.G.inventory[0])
+
       while (move.G.inventory.length > 0) {
         let nullOrt = move.G.pyramide[indexAnzeiger].indexOf(null)
-        move.G.pyramide[indexAnzeiger][nullOrt] = move.G.inventory[0]
+        move.G.pyramide[indexAnzeiger][nullOrt] = move.G.inventory.pop()
         //move.G.inventory = []
       }
     },
