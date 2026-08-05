@@ -87,12 +87,11 @@ export const Game = {
 
     takeTile: function takeTile(move, manufakturindex, tileindex) {
       //welche Farbe hat das angeklickte Tile
-      let Farbechecker =
-
+      let Farbechecker = move.G.manufaktur[manufakturindex][tileindex]
 
       let d = 0
       while (d < 4) {
-        if (tileindex == d) {
+        if (move.G.manufaktur[manufakturindex][d] == Farbechecker) {
           move.G.inventory.push(move.G.manufaktur[manufakturindex][d])
           move.G.manufaktur[manufakturindex][d] = null
         } else {
