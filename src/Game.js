@@ -97,8 +97,6 @@ export const Game = {
 
     // let erstesTileImArray =
 
-    in5x5Platzieren : function in5x5platieren  ,
-
     takeTile: function takeTile(move, manufakturindex, tileindex) {
       //welche Farbe hat das angeklickte Tile
       let Farbechecker = move.G.manufaktur[manufakturindex][tileindex]
@@ -123,6 +121,15 @@ export const Game = {
         let nullOrt = move.G.pyramide[indexAnzeiger].indexOf(null)
         move.G.pyramide[indexAnzeiger][nullOrt] = move.G.inventory.pop()
         //move.G.inventory = []
+      }
+      let manufakturLeer = false
+      let mitteLeer = false
+      for (let alleArrays of move.G.manufaktur) {
+        if (alleArrays.length > 0) {
+          return (manufakturLeer = false)
+        } else {
+          return (manufakturLeer = true)
+        }
       }
     },
     mitteZumInventory: function mitteZumInventory(move, Farbe) {
