@@ -132,7 +132,9 @@ export const Game = {
       }
       let manufakturLeer = true
 
-      for (let alleArraysAusManufaktur of move.G.manufaktur) {
+      for (let alleArraysAusManufaktur of move.G.manufaktur[manufakturindex][
+        tileindex
+      ]) {
         if (alleArraysAusManufaktur.length != 0) {
           manufakturLeer = false
         }
