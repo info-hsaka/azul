@@ -124,11 +124,12 @@ export const Game = {
       }
       let manufakturLeer = false
       let mitteLeer = false
-      for (let alleArrays of move.G.manufaktur) {
-        if (alleArrays.length > 0) {
-          return (manufakturLeer = false)
+
+      for (let alleAnderenArrays of move.G.mitte) {
+        if (alleAnderenArrays.length != 0) {
+          mitteLeer = false
         } else {
-          return (manufakturLeer = true)
+          mitteLeer = true
         }
       }
     },
