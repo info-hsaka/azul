@@ -139,6 +139,7 @@ export const Game = {
         let r = 0
         while (r < move.G.pyramide.length) {
           if (move.G.pyramide[r].indexOf(null) == -1) {
+            move.G.pyramide.push(legeFeld)
           }
         }
       }
