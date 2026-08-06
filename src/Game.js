@@ -122,7 +122,7 @@ export const Game = {
         move.G.pyramide[indexAnzeiger][nullOrt] = move.G.inventory.pop()
         //move.G.inventory = []
       }
-      let manufakturLeer = false
+
       let mitteLeer = true
 
       for (let alleAnderenArrays of move.G.mitte) {
@@ -130,7 +130,14 @@ export const Game = {
           mitteLeer = false
         }
       }
-      console.log("mitteleer", mitteLeer)
+      let manufakturLeer = true
+
+      for (let alleArraysAusManufaktur of move.G.manufaktur) {
+        if (alleArraysAusManufaktur.length != 0) {
+          manufakturLeer = false
+        }
+      }
+      console.log("manufakturleer", manufakturLeer)
     },
     mitteZumInventory: function mitteZumInventory(move, Farbe) {
       let z = 0
