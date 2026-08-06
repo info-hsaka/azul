@@ -135,7 +135,7 @@ export const Game = {
           manufakturLeer = false
         }
       }
-      //console.log(manufakturLeer, mitteLeer, "yeah")
+      console.log(manufakturLeer, mitteLeer, "yeah")
       if (manufakturLeer && mitteLeer) {
         let r = 0
         while (r < move.G.pyramide.length) {
