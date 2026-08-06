@@ -13,7 +13,7 @@ export function draw(
   const ctx = canvas.getContext("2d")
 
   // draw here
-  ctx.strokeRect(300, 200, 250, 250)
+  /* ctx.strokeRect(300, 200, 250, 250)
   let a1 = 350
   while (a1 < 550) {
     ctx.beginPath()
@@ -29,15 +29,17 @@ export function draw(
     ctx.lineTo(550, b1)
     ctx.stroke()
     b1 = b1 + 50
-  }
-  /*let z = 0
+  }*/
+  let z = 6
   let v = 0
   while (v < 5) {
-    z = 0
-    while (z < 5) {
-      // 5*5 Feld  Orientierung an der Pyramide
+    z = 6
+    while (z < 11) {
+      ctx.strokeRect(z * 50, v * 50 + 200, 50, 50) // 5*5 Feld  Orientierung an der Pyramide
+      z = z + 1
     }
-  }*/
+    v = v + 1
+  }
   // Pyramide
   let x = 0
   let y = 0
