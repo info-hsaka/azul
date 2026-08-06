@@ -105,9 +105,11 @@ export const Game = {
       while (d < 4) {
         if (move.G.manufaktur[manufakturindex][d] == Farbechecker) {
           move.G.inventory.push(move.G.manufaktur[manufakturindex][d])
+          //move.G.manufaktur[manufakturIndex][d]= null
           move.G.manufaktur[manufakturindex].splice(d, 1)
         } else {
           move.G.mitte.push(move.G.manufaktur[manufakturindex][d])
+          //move.G.manufaktur[manufakturIndex][d]= null
           move.G.manufaktur[manufakturindex].splice(d, 1)
         }
         d = d + 1
