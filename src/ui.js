@@ -30,14 +30,14 @@ export function draw(
     ctx.stroke()
     b1 = b1 + 50
   }
-  let z = 0
+  /*let z = 0
   let v = 0
   while (v < 5) {
     z = 0
     while (z < 5) {
       // 5*5 Feld  Orientierung an der Pyramide
     }
-  }
+  }*/
   // Pyramide
   let x = 0
   let y = 0
