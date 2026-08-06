@@ -139,8 +139,10 @@ export const Game = {
       if (manufakturLeer && mitteLeer) {
         let r = 0
         while (r < move.G.pyramide.length) {
+          move.G.pyramide[r][0]
+
           if (move.G.pyramide[r].indexOf(null) == -1) {
-            move.G.pyramide.push(legeFeld)
+            move.G.legeFeld.push(legeFeld)
           }
         }
       }
