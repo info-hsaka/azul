@@ -26,11 +26,41 @@ export const Game = {
     sack = random.Shuffle(sack)
 
     let legeFeld = [
-      [null, null, null, null, null],
-      [null, null, null, null, null],
-      [null, null, null, null, null],
-      [null, null, null, null, null],
-      [null, null, null, null, null],
+      [
+        { farbe: tiles.blau, belegt: false },
+        { farbe: tiles.gelb, belegt: false },
+        { farbe: tiles.rot, belegt: false },
+        { farbe: tiles.schwarz, belegt: false },
+        { farbe: tiles.weiß, belegt: false },
+      ],
+      [
+        { farbe: tiles.weiß, belegt: false },
+        { farbe: tiles.blau, belegt: false },
+        { farbe: tiles.gelb, belegt: false },
+        { farbe: tiles.rot, belegt: false },
+        { farbe: tiles.schwarz, belegt: false },
+      ],
+      [
+        { farbe: tiles.schwarz, belegt: false },
+        { farbe: tiles.weiß, belegt: false },
+        { farbe: tiles.blau, belegt: false },
+        { farbe: tiles.gelb, belegt: false },
+        { farbe: tiles.rot, belegt: false },
+      ],
+      [
+        { farbe: tiles.rot, belegt: false },
+        { farbe: tiles.schwarz, belegt: false },
+        { farbe: tiles.weiß, belegt: false },
+        { farbe: tiles.blau, belegt: false },
+        { farbe: tiles.gelb, belegt: false },
+      ],
+      [
+        { farbe: tiles.gelb, belegt: false },
+        { farbe: tiles.rot, belegt: false },
+        { farbe: tiles.schwarz, belegt: false },
+        { farbe: tiles.weiß, belegt: false },
+        { farbe: tiles.blau, belegt: false },
+      ],
     ]
 
     let pyramide = [
