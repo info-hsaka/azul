@@ -135,7 +135,8 @@ export const Game = {
           manufakturLeer = false
         }
       }
-      console.log("manufakturleer", manufakturLeer)
+      if (manufakturLeer && mitteLeer) {
+      }
     },
     mitteZumInventory: function mitteZumInventory(move, Farbe) {
       let z = 0
