@@ -97,6 +97,8 @@ export const Game = {
 
     // let erstesTileImArray =
 
+    in5x5Platzieren : function in5x5platieren  ,
+
     takeTile: function takeTile(move, manufakturindex, tileindex) {
       //welche Farbe hat das angeklickte Tile
       let Farbechecker = move.G.manufaktur[manufakturindex][tileindex]
