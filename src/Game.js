@@ -140,10 +140,16 @@ export const Game = {
         let r = 0
         while (r < move.G.pyramide.length) {
           move.G.pyramide[r][0]
-
-          if (move.G.pyramide[r].indexOf(null) == -1) {
-            move.G.legeFeld.push(legeFeld)
+          move.G.legeFeld[r]
+          let i = 0
+          while (i < move.G.legeFeld.length) {
+            console.log(move.G.legeFeld[r][i].farbe, move.G.pyramide[r][0])
+            if (move.G.legeFeld[r][i].farbe === move.G.pyramide[r][0]) {
+              move.G.legeFeld[r][i].belegt = true
+            }
+            i = i + 1
           }
+          r = r + 1
         }
       }
     },
