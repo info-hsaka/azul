@@ -41,6 +41,7 @@ export const Game = {
       [null, null, null, null, null],
     ]
 
+
     let manufaktur = [[], [], [], [], [], [], [], [], []]
 
     for (let platte of manufaktur) {
@@ -64,6 +65,9 @@ export const Game = {
 
   moves: {
     /** @type {Move} */
+
+
+    let
 
     takeTile: function takeTile(move, manufakturindex, tileindex) {
       //welche Farbe hat das angeklickte Tile
