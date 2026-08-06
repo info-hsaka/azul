@@ -105,10 +105,10 @@ export const Game = {
       while (d < 4) {
         if (move.G.manufaktur[manufakturindex][d] == Farbechecker) {
           move.G.inventory.push(move.G.manufaktur[manufakturindex][d])
-          move.G.manufaktur[manufakturindex][d] = null
+          move.G.manufaktur[manufakturindex].splice(d, 1)
         } else {
           move.G.mitte.push(move.G.manufaktur[manufakturindex][d])
-          move.G.manufaktur[manufakturindex][d] = null
+          move.G.manufaktur[manufakturindex].splice(d, 1)
         }
         d = d + 1
       }
@@ -123,13 +123,8 @@ export const Game = {
         //move.G.inventory = []
       }
 
-      let mitteLeer = true
+      let mitteLeer = move.G.mitte.length == 0
 
-      for (let alleAnderenArrays of move.G.mitte) {
-        if (alleAnderenArrays.length != 0) {
-          mitteLeer = false
-        }
-      }
       let manufakturLeer = true
 
       for (let alleArraysAusManufaktur of move.G.manufaktur) {
