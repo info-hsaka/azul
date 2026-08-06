@@ -123,15 +123,14 @@ export const Game = {
         //move.G.inventory = []
       }
       let manufakturLeer = false
-      let mitteLeer = false
+      let mitteLeer = true
 
       for (let alleAnderenArrays of move.G.mitte) {
         if (alleAnderenArrays.length != 0) {
           mitteLeer = false
-        } else {
-          mitteLeer = true
         }
       }
+      console.log("mitteleer", mitteLeer)
     },
     mitteZumInventory: function mitteZumInventory(move, Farbe) {
       let z = 0
