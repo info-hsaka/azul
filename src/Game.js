@@ -136,6 +136,11 @@ export const Game = {
         }
       }
       if (manufakturLeer && mitteLeer) {
+        let r = 0
+        while (r < move.G.pyramide.length) {
+          if (move.G.pyramide[r].indexOf(null) == -1) {
+          }
+        }
       }
     },
     mitteZumInventory: function mitteZumInventory(move, Farbe) {
